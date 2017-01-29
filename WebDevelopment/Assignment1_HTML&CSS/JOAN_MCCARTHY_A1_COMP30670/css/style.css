@@ -1,0 +1,234 @@
+/* General Styling */
+body {
+    font-family: 'Monda', sans-serif;
+    background: #B5B5B5 url('/images/hex.png') repeat;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: navy;
+}
+
+h2{
+    color: navy;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3{
+    color: navy;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+/* Header Styling */
+header {
+    height: 100px;
+    background-color: #50A6C2;	
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 3px #6d8383;
+    overflow: scroll;
+}
+
+header h1 {
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    color: #3EC303;
+    text-shadow: 1px 2px #6d8383;
+    text-align: left;
+    margin: 15px 5px 5px 5px;
+}
+
+header img{
+    max-height: 60px;
+    max-width: 100px;
+    float: right;
+}
+
+header h1 .name{
+    text-transform: uppercase;
+    color: #293E6A;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 2px #6d8383;
+}
+
+header div.navbar{
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header nav{
+    float: left;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    color: #FF6347;
+    display: block;
+    margin-right: 30px;
+}
+
+header nav li.selected{
+    color: #FF9C5F;
+    margin-right: 30px;
+    text-decoration: underline;
+}
+
+/* General Content Styling */
+#about-us, #rewards, #whatwedo, #contact, #location{
+    margin: 30px 100px 30px 100px;
+    background-color: #fff;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #6d8383;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Content Styling - Home page (image, logo and button) */
+#image {
+    background: #fff url('/images/background.png');
+    display: block;
+    margin: 0 auto;
+    width: 715px;
+    height: 487px;
+    border: 20px solid #545454;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    padding: 40px 40px 40px 40px;
+    width: 300px;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    color: #FF9C5F;
+    font-size: 40px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+}
+
+.button:hover {
+    color: #FF6347;
+}
+
+/* List styling */
+#whatwedo ul li, #about-us ul li{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+/* Hyper link styling*/
+#about-us a:link, #contact a:link {
+    color: #0092D7;
+}
+
+#about-us a:visited, #contact a:visited {
+    color: #3EC303;
+}
+
+#about-us a:hover, #contact a:hover, #about-us a:active, #contact a:active{
+    color: #FF6347;
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #6d8383;
+}
+
+tr:hover{
+    background-color:#f5f5f5;
+}
+
+span.tab{
+    padding: 0 10px;
+}
+
+/* Images styling */
+#whatwedo img {
+    float: right;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#about-us img {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px; 
+    max-height: 500px;
+}
+
+#rewards img{
+    display: block;
+    margin: auto;  
+}
+
+#contact img{
+    float: right;
+    max-width: 400px; 
+    margin-right: 100px;
+}
+
+/* Center video and map elements */
+video{
+    display: block;
+    margin: 0 auto;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer Styling */
+footer {
+	height: 100px;
+	background-color: #293E6A;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 3px #6d8383;
+    overflow: scroll;
+}
+
+footer ul li{
+    display: inline-block;
+    float: left;
+    margin: 30px 30px 40px 50px;
+}
+
+#footer-logo img{
+    max-height: 60px;
+    max-width: 300px;
+    float: right;
+    margin: 5px 50px 5px 5px;
+}

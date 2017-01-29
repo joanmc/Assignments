@@ -1,0 +1,25 @@
+<h1>Edit Post</h1>
+<p>Edit the details of selected post</p>
+
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+<p>
+  <%= link_to 'Delete', mysite_post_delete_path(:id => @post.id) %>
+</p>
+
+<%= form_for(@post, :url => {:action => 'post_update', :id => @post.id}) do |p| %>
+    <p> Author:
+      <%= p.text_field :author %>
+    </p>
+    <p> Title:
+      <%= p.text_field :title %>
+    </p>
+    <p> Text:
+      <%= p.text_area :text %>
+    </p>
+    <p>
+      <%= submit_tag 'Update Post' %>
+    </p>
+<% end %>

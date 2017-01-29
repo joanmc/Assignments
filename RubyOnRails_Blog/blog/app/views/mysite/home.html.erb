@@ -1,0 +1,21 @@
+<h1>Home</h1>
+<p>My Blog Posts</p>
+
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+<table class="table">
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Text</th>
+  </tr>
+  <% @posts.each do |p| %>
+      <tr>
+        <td><%= link_to p.title, mysite_post_detail_path(:id => p.id) %></td>
+        <td><%= p.author %></td>
+        <td><%= p.text %></td>
+      </tr>
+  <% end %>
+</table>

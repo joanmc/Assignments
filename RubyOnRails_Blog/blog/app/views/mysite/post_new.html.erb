@@ -1,0 +1,21 @@
+<h1>New Blog Post</h1>
+<p>Add a new blog post</p>
+
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+<%= form_tag('post_new', {:method => 'post', remote: true} ) do %>
+    <p> Author:
+      <%= text_field_tag 'author' %>
+    </p>
+    <p> Title:
+      <%= text_field_tag 'title' %>
+    </p>
+    <p> Text:
+      <%= text_area_tag 'text' %>
+    </p>
+    <p>
+      <%= submit_tag 'Publish Post' %>
+    </p>
+<% end %>

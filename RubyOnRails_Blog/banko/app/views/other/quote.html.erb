@@ -1,0 +1,8 @@
+<h1> <p align="center"> Your Quote </p></h1>
+
+<p>  <%=h @message %> </p>
+
+<p> Would you like to
+  <%= link_to 'Finish', main_goodbye_path(:id => @person.id) %> or
+  <%= link_to 'Change Details',  other_change_path(:id => @person.id)  %>
+</p>

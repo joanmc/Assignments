@@ -1,0 +1,43 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+COMP 30680: Web Application Development\
+Assignment 2: Javascript and JSON\
+\
+Joan McCarthy\
+127447429\
+\
+\ul POINT E\
+\ulnone - The google map displaying the location of the city searched for has a custom marker\
+- The marker is positioned at the location (Latitude, Longitude) of the location the weather has been requested for.\
+- When the marker is clicked, an information window appears displaying a short summary (weather description, temperature and image) of the weather forecasted for the nearest time (ie. for the present day).\
+- The information window can then be cleared be clicking the \'93x\'94 button.\
+- At the same time that the info window is displayed for the marker a google line chart is displayed, showing a plot of the rainfall, temperature and windspeed for the number of days requested.\
+- The chart can be removed again by clicking on the chart or by clicking on the marker on the map again.
+\i \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\i0 \cf0 \ul \ulc0 Note on Error handling:\ulnone \
+- To distinguish between multiple cities of the same name and to prevent the user entering an invalid address, google maps cities autocomplete was used.\
+- When the user begins entering a location to the input box, autocomplete will begin to predict the location.\
+- The user can then select the desired location from the list of predictions that autocomplete provides in the drop down menu below the input box.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\i \cf0 \
+
+\i0 \ul Note on 3 Hour Forecast:\ulnone \
+- User can click on a particular day in the table displaying the daily weather forecast (note that the click must be on the actual day and not anywhere in the row of that day) and another table will appear below displaying the 3 hour forecast for the next 24 hours from the day selected.\
+- User can click on a different day in the daily forecast table to show the 3 hour forecast for that day.\
+- User can click on anywhere on the table for the 3 hour forecast table to hide the table.\
+\
+\ul References\ulnone \
+- The CSS sheet \'93reset.css\'94 was taken from Meyerweb\
+- Google maps and Google charts API  documentation\
+{\field{\*\fldinst{HYPERLINK "https://developers.google.com/maps/documentation/javascript/"}}{\fldrslt https://developers.google.com/maps/documentation/javascript/}}\
+{\field{\*\fldinst{HYPERLINK "https://google-developers.appspot.com/chart/interactive/docs/gallery/linechart"}}{\fldrslt https://google-developers.appspot.com/chart/interactive/docs/gallery/linechart}}\
+}

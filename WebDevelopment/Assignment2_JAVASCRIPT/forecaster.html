@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forecaster</title>
+        <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<meta charset="utf-8"/>
+        <link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<h1 id="title">Forecaster</h1><br><br>
+        <div id="content">
+            <form name="form1">
+                Enter a location to view the weather forecast for: <br>
+                <input type="text" name="location" placeholder="Enter Location" id="pac-input"><br><br>
+                Select the required unit: <br>
+                <input type="radio" name="unit" value="metric" checked>Metric<br>
+                <input type="radio" name="unit" value="imperial">Imperial<br><br>
+                Select a number of days: <br>
+                <input type="radio" name="days" value="1" checked>1
+                <input type="radio" name="days" value="2">2
+                <input type="radio" name="days" value="3">3
+                <input type="radio" name="days" value="4">4
+                <input type="radio" name="days" value="5">5<br><br>
+                <button id="btn" type="button" onclick="HTTPrequest(myFunction)">Submit</button><br><br>
+            </form>
+        
+        
+        <div id="details">
+            <form name="form2">
+                Select information to show: <br><br>
+                <input id="details_summ" type="checkbox" name="summary" checked="checked">Summary<br>
+                <input id="details_tmin" type="checkbox" name="tmin" checked="checked">Minimum Temperature<br>
+                <input id="details_tmax" type="checkbox" name="tmax" checked="checked">Maximum Temperature<br>
+                <input id="details_rain" type="checkbox" name="rain" checked="checked">Predicted Rainfall<br>
+                <input id="details_icon" type="checkbox" name="icon" checked="checked">Icon<br>
+                <input id="details_pressure" type="checkbox" name="pressure">Pressure<br>
+                <input id="details_humidity" type="checkbox" name="humidity">Humidity<br>
+                <input id="details_wind" type="checkbox" name="wind">Wind Speed<br><br>
+            </form>
+        </div>
+        
+        <div id="map"></div>
+        <div id="chart"></div>
+        <div id="table"></div>
+        <div id="table2"></div>
+        </div>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxoFZrJtUh4yMRk17Zfc_mFwYyxojdcUw&libraries=places"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="myscripts.js"></script>
+	</body>
+</html>
